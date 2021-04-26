@@ -8,10 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		6F804FA526374B3A00B38B6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F804FA426374B3A00B38B6F /* AppDelegate.swift */; };
-		6F804FA726374B3A00B38B6F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F804FA626374B3A00B38B6F /* SceneDelegate.swift */; };
 		6F804FA926374B3A00B38B6F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F804FA826374B3A00B38B6F /* ViewController.swift */; };
 		6F804FAC26374B3A00B38B6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F804FAA26374B3A00B38B6F /* Main.storyboard */; };
-		6F804FAF26374B3A00B38B6F /* NQAL_Client.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6F804FAD26374B3A00B38B6F /* NQAL_Client.xcdatamodeld */; };
 		6F804FB126374B3C00B38B6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F804FB026374B3C00B38B6F /* Assets.xcassets */; };
 		6F804FB426374B3C00B38B6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F804FB226374B3C00B38B6F /* LaunchScreen.storyboard */; };
 		6F804FBF26374B3D00B38B6F /* NQAL_ClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F804FBE26374B3D00B38B6F /* NQAL_ClientTests.swift */; };
@@ -38,10 +36,8 @@
 /* Begin PBXFileReference section */
 		6F804FA126374B3A00B38B6F /* NQAL Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NQAL Client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F804FA426374B3A00B38B6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6F804FA626374B3A00B38B6F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		6F804FA826374B3A00B38B6F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6F804FAB26374B3A00B38B6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		6F804FAE26374B3A00B38B6F /* NQAL_Client.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NQAL_Client.xcdatamodel; sourceTree = "<group>"; };
 		6F804FB026374B3C00B38B6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6F804FB326374B3C00B38B6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6F804FB526374B3C00B38B6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -101,14 +97,10 @@
 		6F804FA326374B3A00B38B6F /* NQAL Client */ = {
 			isa = PBXGroup;
 			children = (
-				6F804FA426374B3A00B38B6F /* AppDelegate.swift */,
-				6F804FA626374B3A00B38B6F /* SceneDelegate.swift */,
-				6F804FA826374B3A00B38B6F /* ViewController.swift */,
-				6F804FAA26374B3A00B38B6F /* Main.storyboard */,
-				6F804FB026374B3C00B38B6F /* Assets.xcassets */,
-				6F804FB226374B3C00B38B6F /* LaunchScreen.storyboard */,
-				6F804FB526374B3C00B38B6F /* Info.plist */,
-				6F804FAD26374B3A00B38B6F /* NQAL_Client.xcdatamodeld */,
+				6F804FE326374CBE00B38B6F /* App Configuration */,
+				6F804FE226374CA200B38B6F /* Controller */,
+				6F804FE126374C9E00B38B6F /* View */,
+				6F804FE026374C9600B38B6F /* Model */,
 			);
 			path = "NQAL Client";
 			sourceTree = "<group>";
@@ -129,6 +121,48 @@
 				6F804FCB26374B3D00B38B6F /* Info.plist */,
 			);
 			path = "NQAL ClientUITests";
+			sourceTree = "<group>";
+		};
+		6F804FE026374C9600B38B6F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6F804FE126374C9E00B38B6F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6F804FAA26374B3A00B38B6F /* Main.storyboard */,
+				6F804FB226374B3C00B38B6F /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6F804FE226374CA200B38B6F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6F804FA826374B3A00B38B6F /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6F804FE326374CBE00B38B6F /* App Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				6F804FE426374CEC00B38B6F /* App Delegates */,
+				6F804FB026374B3C00B38B6F /* Assets.xcassets */,
+				6F804FB526374B3C00B38B6F /* Info.plist */,
+			);
+			path = "App Configuration";
+			sourceTree = "<group>";
+		};
+		6F804FE426374CEC00B38B6F /* App Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				6F804FA426374B3A00B38B6F /* AppDelegate.swift */,
+			);
+			path = "App Delegates";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,8 +297,6 @@
 			files = (
 				6F804FA926374B3A00B38B6F /* ViewController.swift in Sources */,
 				6F804FA526374B3A00B38B6F /* AppDelegate.swift in Sources */,
-				6F804FAF26374B3A00B38B6F /* NQAL_Client.xcdatamodeld in Sources */,
-				6F804FA726374B3A00B38B6F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,12 +473,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 0;
 				DEVELOPMENT_TEAM = 8ZLCNTLX2Q;
-				INFOPLIST_FILE = "NQAL Client/Info.plist";
+				INFOPLIST_FILE = "NQAL Client/App Configuration/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "secondsest-gmail.com.NQAL-Client";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -460,12 +495,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 0;
 				DEVELOPMENT_TEAM = 8ZLCNTLX2Q;
-				INFOPLIST_FILE = "NQAL Client/Info.plist";
+				INFOPLIST_FILE = "NQAL Client/App Configuration/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "secondsest-gmail.com.NQAL-Client";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -597,19 +635,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		6F804FAD26374B3A00B38B6F /* NQAL_Client.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				6F804FAE26374B3A00B38B6F /* NQAL_Client.xcdatamodel */,
-			);
-			currentVersion = 6F804FAE26374B3A00B38B6F /* NQAL_Client.xcdatamodel */;
-			path = NQAL_Client.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 6F804F9926374B3A00B38B6F /* Project object */;
 }
